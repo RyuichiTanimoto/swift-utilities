@@ -1,0 +1,16 @@
+platform :ios, '8.0'
+
+target 'swift-utilities-demo' do
+  use_frameworks!
+
+  pod 'swift-utilities', :path => '..'
+
+  target 'swift-utilities-demoTests' do
+    inherit! :search_paths
+  end
+
+  target 'swift-utilities-demoUITests' do
+    inherit! :search_paths
+  end
+
+end
