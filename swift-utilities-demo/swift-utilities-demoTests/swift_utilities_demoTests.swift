@@ -8,6 +8,7 @@
 
 import XCTest
 @testable import swift_utilities_demo
+import swift_utilities
 
 class swift_utilities_demoTests: XCTestCase {
     
@@ -21,15 +22,14 @@ class swift_utilities_demoTests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-    
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
+    func test_forEach() {
+        let opt_int: Int? = 3
+        opt_int.forEach {
+            XCTAssertEqual($0 * $0, 9)
+        }
+        let opt_int_nil: Int? = nil
+        opt_int_nil.forEach {_ in 
+            XCTFail()
         }
     }
     
