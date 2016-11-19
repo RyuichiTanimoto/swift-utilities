@@ -9,15 +9,15 @@
 import Foundation
 
 extension Optional {
-    public func reduce<U>(initial: U, @noescape combine: (U, Wrapped) -> U) -> U {
+    public func reduce<U>(_ initial: U, combine: (U, Wrapped) -> U) -> U {
         switch self {
-        case .None:
+        case .none:
             return initial
-        case .Some(let value):
+        case .some(let value):
             return combine(initial, value)
         }
     }
-    public func forEach(@noescape action: Wrapped -> ()) {
+    public func forEach(_ action: (Wrapped) -> ()) {
         reduce(()) { action($1) }
     }
 }
