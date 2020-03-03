@@ -1,6 +1,7 @@
 Pod::Spec.new do |s|
   s.name         = "swift-utilities"
   s.version      = "0.1.0"
+  s.swift_versions = "4.2"
   s.summary      = "A collection of extensions in swift."
   s.description  = <<-DESC
 A collection of extensions in swift.
