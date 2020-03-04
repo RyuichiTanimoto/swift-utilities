@@ -1,5 +1,5 @@
 PODS:
-  - swift-utilities (0.0.1)
+  - swift-utilities (0.1.2)
 
 DEPENDENCIES:
   - swift-utilities (from `..`)
@@ -9,8 +9,8 @@ EXTERNAL SOURCES:
     :path: ".."
 
 SPEC CHECKSUMS:
-  swift-utilities: 767a13a72b5a03d6da5548233ae090967d419804
+  swift-utilities: 12596fb3d74a46db58139b707adf86a1786d237f
 
-PODFILE CHECKSUM: 0b72b86b119d054f5db9d5bdbf09fb7c5e21aba6
+PODFILE CHECKSUM: b1312db9cefc096ab2b2e344f71cbab13f1eac21
 
 COCOAPODS: 1.0.1

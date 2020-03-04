@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "swift-utilities"
-  s.version      = "0.1.0"
+  s.version      = "0.1.2"
   s.swift_versions = "4.2"
   s.summary      = "A collection of extensions in swift."
   s.description  = <<-DESC
@@ -23,6 +23,8 @@ Try!
   #s.frameworks = ""
   #s.libraries = ""
   s.requires_arc = true
-  #s.xcconfig = { }
+  s.xcconfig = {
+    'SWIFT_VERSION' => '3.0'
+  }
   #s.dependency ""
 end

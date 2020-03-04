@@ -6,11 +6,11 @@ target 'swift-utilities-demo' do
   pod 'swift-utilities', :path => '..'
 
   target 'swift-utilities-demoTests' do
-    inherit! :search_paths
+    inherit! :complete
   end
 
   target 'swift-utilities-demoUITests' do
-    inherit! :search_paths
+    inherit! :complete
   end
 
 end
